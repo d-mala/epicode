@@ -86,7 +86,7 @@
     const title = document.querySelector('h1');
 
     function changeTitle() {
-      title.innerText = 'Ciao';
+      title.innerText = 'Nuovo titolo';
     }
 
     changeTitle();
@@ -129,44 +129,92 @@
      Scrivi una funzione che aggiunga un nuovo elemento lista alla seconda lista non ordinata
   */
 
-    const addToTheSecond = function () { }
+    const addToTheSecond = function () {
+      const ul = document.querySelector('#secondList');
+      const li = document.createElement('li');
+      li.innerText = '4th';
+      ul.append(li);
+    }
+
+    addToTheSecond();
 
     /* ESERCIZIO 6
      Scrivi una funzione che aggiunga un paragrafo al primo div
   */
 
-    const addParagraph = function () { }
+    const addParagraph = function () {
+      const firstDiv = document.querySelector('div');
+      if (!firstDiv) {
+        console.error('No first div found');
+        return;
+      }
+      const newPar = document.createElement('p');
+      newPar.innerText = 'Nuovo paragrafo';
+      firstDiv.appendChild(newPar);
+    }
+
+    addParagraph();
 
     /* ESERCIZIO 7
      Scrivi una funzione che faccia scomparire la prima lista non ordinata
   */
 
-    const hideFirstUl = function () { }
+    const hideFirstUl = function () {
+      const firsUl = document.querySelector('ul');
+      firsUl.style.display = 'none'
+    }
+
+    hideFirstUl();
 
     /* ESERCIZIO 8 
      Scrivi una funzione che renda verde il background di ogni lista non ordinata
     */
 
-    const paintItGreen = function () { }
+    const paintItGreen = function () {
+      const myUl = document.querySelectorAll('ul');
+      myUl.forEach(element => {
+        element.style.backgroundColor = 'green';
+      });
+    }
+
+    paintItGreen();
 
     /* ESERCIZIO 9
      Scrivi una funzione che rimuova l'ultima lettera dall'h1 ogni volta che l'utente lo clicca
     */
 
-    const makeItClickable = function () { }
+    const makeItClickable = function () {
+      const h1Clickable = document.querySelector('h1');
+      h1Clickable.addEventListener('click', function() {
+        h1Clickable.innerText = h1Clickable.innerText.slice(0, -1);
+      });
+    };
+
+    makeItClickable();
 
     /* ESERCIZIO 10
      Crea una funzione che, al click sul footer, riveli l'URL del link interno come contenuto di un alert()
     */
 
-    const revealFooterLink = function () { }
+    const revealFooterLink = function () {
+      const footerClickable = document.querySelector('footer');
+      footerClickable.addEventListener('click', function() {
+        alert(document.querySelector('footer a').getAttribute('href'));
+      });
+    }
+
+    revealFooterLink();
 
     /* ESERCIZIO 11
      Crea una funzione che crei una tabella nell'elemento con id "tableArea". 
      La tabella avrà 5 elementi e questa struttura: immagine, nome prodotto, quantità, prezzo
   */
 
-    const generateTable = function () { }
+    const generateTable = function () {
+      
+    }
+
+    generateTable();
 
     /* ESERCIZIO 12
      Crea una funzione che aggiunga una riga alla tabella precedentemente creata e fornisca i dati necessari come parametri
