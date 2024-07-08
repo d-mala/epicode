@@ -59,6 +59,7 @@
 
     <div>
       <p>Questo testo è un placeholder per gli esercizi</p>
+      <p>Anche questo testo è un placeholder per gli esercizi</p>
     </div>
   </div>
 
@@ -107,7 +108,10 @@
     */
 
     const changePcontent = function () {
-      document.querySelector('div p').innerText = 'Testo modificato';
+      const div = document.querySelectorAll('div p');
+      div.forEach((element, index) => {
+        element.innerText = `Testo modificato ${index + 1}`;
+      });
     };
 
     changePcontent();
