@@ -14,17 +14,17 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
-<body>
+<body id="top">
     <header>
-        <div>
+        <div class="brand">
             <img src="./assets/img/logo.svg" alt="logo del blog" width="250" height="60">
             <p>Epicode - Il blog dei developers</p>
         </div>
         <nav>
             <ul>
-                <li><a href="index.html" title="Home Page">Home</a></li>
-                <li><a href="articoli.html" title="Elenco degli articoli tecnici pubblicati">Articoli</a></li>
-                <li><a href="contatti.html" title="Candidati inviando un tuo cv">Job</a></li>
+                <li><a href="./index.html" title="Home Page">Home</a></li>
+                <li><a href="./articoli.html" title="Elenco degli articoli tecnici pubblicati">Articoli</a></li>
+                <li><a href="./contatti.html" title="Candidati inviando un tuo cv">Job</a></li>
             </ul>
         </nav>
 
@@ -33,13 +33,17 @@
     <hr>
 
     <main>
-        <article>
-            <h1>Come creare un template per i post</h1>
+        <article class="clearfix">
+            <h1>Come creare un <span id="underline">template per i post<img src="assets/img/underline.svg"
+                        alt="line"></span></h1>
+
             <p><i class="fas fa-pen-square"></i> di Mario Rossi - <span><i class="fas fa-clock"></i> pubblicato il
                     25-10-2020</span></p>
-
-            <p>La prima cosa da fare è suddividere in blocchi logici la pagina, identificando le <strong>parti
-                    comuni</strong> da applicare a tutte le pagine</p>
+            <img src="./assets/img/badge.png" class="imgLeft" alt="logo Html5" width="70" height="70">
+            <p> La prima cosa
+                da
+                fare è suddividere in blocchi logici la pagina, identificando le <strong>parti comuni</strong> da
+                applicare a tutte le pagine</p>
 
             <p>Le varie aree saranno quindi suddivise in:</p>
             <ul>
@@ -102,10 +106,10 @@
                 ottimizzato il tutto, avremo raggiunto il nostro obiettivo ed essere stati dei veri developers come
                 loro:</p>
 
-            <div id="video"><iframe width="" src="https://www.youtube.com/embed/dvOvHXruEDM"
-                    title="YouTube video player"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe></div>
+            <iframe width="300" height="300" src="https://www.youtube.com/embed/dvOvHXruEDM"
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
 
             <section>
                 <h2>Novità</h2>
@@ -124,7 +128,7 @@
         <aside>
             <h2>Articoli correlati</h2>
             <div>
-                <a href="post2.html"
+                <a href="./post2.html"
                     title="Passaggi guidati per validare correttamente tutto il codice sviluppato">Validare il codice
                     HTML</a>
                 <p><i class="fas fa-tag"></i> Categoria: develop</p>
@@ -132,7 +136,7 @@
             </div>
 
             <div>
-                <a href="post3.html"
+                <a href="./post3.html"
                     title="Passaggi guidati per controllare e correggere tutto il codice sviluppato">Correggere la
                     sintassi</a>
                 <p><i class="fas fa-tag"></i> Categoria: develop</p>
@@ -140,7 +144,7 @@
             </div>
 
             <div>
-                <a href="post4.html" title="Consigli ed approcci per ridurre il peso della pagina">Meno Kb nella
+                <a href="./post4.html" title="Consigli ed approcci per ridurre il peso della pagina">Meno Kb nella
                     pagina</a>
                 <p><i class="fas fa-tag"></i> Categoria: ottimizzazione</p>
                 <p><i class="fas fa-calendar-alt"></i> Data: 30-9-2020</p>
@@ -150,13 +154,22 @@
 
     <hr>
 
+    <div id="nav-buttons">
+        <div>
+            <a href="javascript:void(0)" title="Aggiungi"><button id="add" type="button"><i
+                        class="fas fa-plus"></i></button></a>
+            <a href="javascript:void(0)" title="Calendario"><button id="calendar" type="button"><i
+                        class="fas fa-calendar"></i></button></a>
+        </div>
+        <a href="#top" title="Torna in alto"><button id="arrow-up" type="button"><i
+                    class="fas fa-arrow-up"></i></button></a>
+    </div>
     <footer>
         <p>Blog Epicode &copy;2021</p>
         <address>Testata online di Mario Rossi, registrata con prot. n.213/2018 - via Luigi Einaudi 2 - Milano. P.IVA
             00112233. <a href="mailto:info@epicode.school"
                 title="contattami per informazioni/lavoro/privacy">info@epicode.school</a></address>
     </footer>
-
 </body>
 
 </html>
