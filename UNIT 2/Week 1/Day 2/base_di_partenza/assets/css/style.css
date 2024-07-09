@@ -458,10 +458,25 @@ footer a {
   }
 }
 
+/* Button laterali */
+
 #nav-buttons {
+  z-index: 100;
   position: fixed;
-  z-index: 1;
-  bottom: 20px;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+}
+
+#nav-buttons button#arrow-up {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+#nav-buttons div {
+  position: absolute;
+  bottom: 100px;
   right: 0;
 }
 
@@ -480,6 +495,8 @@ footer a {
   backdrop-filter: blur(5px);
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
+  box-shadow: #444 0 0 5px;
+
 }
 
 #nav-buttons i {
@@ -496,8 +513,8 @@ footer a {
 }
 
 @media screen and (min-width: 700px) {
-
-  #nav-buttons button#add,
-  #nav-buttons button#calendar {
+  #nav-buttons div {
+    position: absolute;
+    top: 20px;
   }
 }
