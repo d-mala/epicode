@@ -1,0 +1,23 @@
+$sizes-map: (
+  sm: 5px,
+  normal: 12px,
+  md: 16px,
+  lg: 20px,
+  xl: 28px,
+  xxl: 32px,
+);
+
+$displays-arr: "inline", "block";
+
+@each $size, $value in $sizes-map {
+  @each $display in $displays-arr {
+    .padding-#{$display}-#{$size} {
+      display: #{$display};
+      padding: #{$value};
+    }
+    .margin-#{$display}-#{$size} {
+      display: #{$display};
+      margin: #{$value};
+    }
+  }
+}

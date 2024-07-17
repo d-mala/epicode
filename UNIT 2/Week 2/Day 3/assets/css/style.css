@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+  color: #f4f4f4;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  color: #28064F;
+}
+
+.padding-inline-sm {
+  display: inline;
+  padding: 5px;
+}
+
+.margin-inline-sm {
+  display: inline;
+  margin: 5px;
+}
+
+.padding-block-sm {
+  display: block;
+  padding: 5px;
+}
+
+.margin-block-sm {
+  display: block;
+  margin: 5px;
+}
+
+.padding-inline-normal {
+  display: inline;
+  padding: 12px;
+}
+
+.margin-inline-normal {
+  display: inline;
+  margin: 12px;
+}
+
+.padding-block-normal {
+  display: block;
+  padding: 12px;
+}
+
+.margin-block-normal {
+  display: block;
+  margin: 12px;
+}
+
+.padding-inline-md {
+  display: inline;
+  padding: 16px;
+}
+
+.margin-inline-md {
+  display: inline;
+  margin: 16px;
+}
+
+.padding-block-md {
+  display: block;
+  padding: 16px;
+}
+
+.margin-block-md {
+  display: block;
+  margin: 16px;
+}
+
+.padding-inline-lg {
+  display: inline;
+  padding: 20px;
+}
+
+.margin-inline-lg {
+  display: inline;
+  margin: 20px;
+}
+
+.padding-block-lg {
+  display: block;
+  padding: 20px;
+}
+
+.margin-block-lg {
+  display: block;
+  margin: 20px;
+}
+
+.padding-inline-xl {
+  display: inline;
+  padding: 28px;
+}
+
+.margin-inline-xl {
+  display: inline;
+  margin: 28px;
+}
+
+.padding-block-xl {
+  display: block;
+  padding: 28px;
+}
+
+.margin-block-xl {
+  display: block;
+  margin: 28px;
+}
+
+.padding-inline-xxl {
+  display: inline;
+  padding: 32px;
+}
+
+.margin-inline-xxl {
+  display: inline;
+  margin: 32px;
+}
+
+.padding-block-xxl {
+  display: block;
+  padding: 32px;
+}
+
+.margin-block-xxl {
+  display: block;
+  margin: 32px;
+}/*# sourceMappingURL=style.css.map */

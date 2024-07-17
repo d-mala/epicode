@@ -1,0 +1,14 @@
+* {
+  font-family: "Roboto", sans-serif;
+  color: $white;
+}
+
+@mixin title-big {
+  font-size: 3rem;
+  font-weight: 900;
+  color: $title-purple;
+}
+
+h1 {
+  @include title-big;
+}
