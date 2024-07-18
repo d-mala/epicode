@@ -133,4 +133,19 @@ h1 {
 .margin-block-xxl {
   display: block;
   margin: 32px;
+}
+
+.button-blue {
+  background-color: #0e6cff;
+  color: white;
+}
+
+.button-orange {
+  background-color: #f15025;
+  color: white;
+}
+
+.button-green {
+  background-color: #33d9b2;
+  color: white;
 }/*# sourceMappingURL=style.css.map */

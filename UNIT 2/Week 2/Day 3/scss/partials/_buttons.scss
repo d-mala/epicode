@@ -1,0 +1,12 @@
+$button-colors: (
+  blue: $blue,
+  orange: $orange,
+  green: $green,
+);
+
+@each $color, $value in $button-colors {
+  .button-#{$color} {
+    background-color: $value;
+    color: white;
+  }
+}
