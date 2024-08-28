@@ -9,10 +9,10 @@ const AddComment = ({ asin }) => {
   })
 
   useEffect(() => {
-    setComment({
-      ...comment,
+    setComment((prevComment) => ({
+      ...prevComment,
       elementId: asin,
-    })
+    }))
   }, [asin])
 
   const sendComment = async (e) => {
@@ -32,12 +32,10 @@ const AddComment = ({ asin }) => {
       )
       if (response.ok) {
         alert('Recensione inviata!')
-        this.setState({
-          comment: {
-            comment: '',
-            rate: 1,
-            elementId: this.props.asin,
-          },
+        setComment({
+          comment: '',
+          rate: 1,
+          elementId: asin,
         })
       } else {
         throw new Error('Qualcosa è andato storto')
@@ -49,19 +47,17 @@ const AddComment = ({ asin }) => {
 
   return (
     <div className="my-3">
-      <Form onSubmit={this.sendComment}>
+      <Form onSubmit={sendComment}>
         <Form.Group className="mb-2">
           <Form.Label>Recensione</Form.Label>
           <Form.Control
             type="text"
             placeholder="Inserisci qui il testo"
-            value={this.state.comment.comment}
+            value={comment.comment}
             onChange={(e) =>
-              this.setState({
-                comment: {
-                  ...this.state.comment,
-                  comment: e.target.value,
-                },
+              setComment({
+                ...comment,
+                comment: e.target.value,
               })
             }
           />
@@ -70,13 +66,11 @@ const AddComment = ({ asin }) => {
           <Form.Label>Valutazione</Form.Label>
           <Form.Control
             as="select"
-            value={this.state.comment.rate}
+            value={comment.rate}
             onChange={(e) =>
-              this.setState({
-                comment: {
-                  ...this.state.comment,
-                  rate: e.target.value,
-                },
+              setComment({
+                ...comment,
+                rate: e.target.value,
               })
             }
           >
