@@ -9,8 +9,8 @@ const AddComment = ({ asin }) => {
   })
 
   useEffect(() => {
-    setComment((prevComment) => ({
-      ...prevComment,
+    setComment((comment) => ({
+      ...comment,
       elementId: asin,
     }))
   }, [asin])
